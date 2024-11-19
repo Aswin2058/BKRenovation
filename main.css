@@ -174,7 +174,7 @@ nav li:first-child{
 
 
 
-.sidebar{
+.sidebar {
     position: fixed;
     top: 0;
     right: 0;
@@ -184,11 +184,17 @@ nav li:first-child{
     background-color: rgba(240, 248, 255, 0.555);
     backdrop-filter: blur(10px);
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-    display: none;
+    display: none; /* Initially hidden */
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    
+    transition: transform 0.3s ease; /* Smooth transition */
+    transform: translateX(100%); /* Initially hidden off-screen */
+}
+
+.sidebar.show {
+    display: flex; /* Show sidebar */
+    transform: translateX(0); /* Move sidebar into view */
 }
 
 .sidebar li{

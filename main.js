@@ -1,13 +1,18 @@
 //for smaller screen nav
-function showSidebar(){
+function showSidebar() {
     const sidebar = document.querySelector(".sidebar");
-    sidebar.style.display = 'flex';
+    sidebar.classList.add('show'); // Add class to trigger the sliding effect
 }
 
-function hideSidebar(){
+function hideSidebar() {
     const sidebar = document.querySelector(".sidebar");
-    sidebar.style.display = 'none';
+    sidebar.classList.remove('show'); // Remove class to hide the sidebar
 }
+
+document.querySelectorAll('.sidebar a').forEach(link => {
+    link.addEventListener('click', hideSidebar); // Trigger hideSidebar when any link is clicked
+});
+
 
 //Stickey navbar
 let lastScrollPosition = 0;
