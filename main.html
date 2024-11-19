@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BK Renovation Co.</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <nav class="nav-container">
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="#first-page">Home</a></li>
+            <li><a href="#second-page">Features</a></li>
+            <li><a href="#services-container">Other Services</a></li>
+            <li><a href="#">About Us</a></li>    
+            <li ><a href="#" onclick="openPopup()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#black"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg></a></li>    
+        </ul>
+        <ul>
+            <li><a href="#" style="font-size: 21px; font-weight: 700;"> <img src="white-bg.jpeg" alt="">BK Renovation & interior.</a></li>
+            <li class="hideOnMobile"><a href="#first-page">Home</a></li>
+            <li class="hideOnMobile"><a href="#second-page">Features</a></li>
+            <li class="hideOnMobile"><a href="#services-container">Other Services</a></li>
+            <li class="hideOnMobile"><a href="#">About Us</a></li>
+            <li class="hideOnMobile" style="border-radius: 30%; padding: 0;"><a href="#" onclick="openPopup()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#black"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg></a></li>
+            <li onclick=showSidebar() class="menu-botton" ><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="black" ><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+
+    <div class="popup-contact" id="popup">
+        <div class="popup-close" onclick="closePopup()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></div>
+        <h2>Contact Us</h2>
+        <div class="contact-us">
+            <div class="phone-number">
+                <h1>+1 (403) 331-9733<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#black"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg></h1>
+            <h1>+1 (403) 331-9733<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#black"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg></h1>
+            </div>
+            <div class="email">
+                <h1>BKRenovation@gmail.ca<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#black"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg></h1>
+            <h1>BKRenovation@gmail.ca<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#black"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg></h1>
+            </div>
+        </div>
+        
+        <div class="social-media">
+            <h2>Join Us</h2>
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg></a>
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+        </div>
+        
+    </div>
+
+    <div id="first-page">
+        <div class="first-content">
+            <p> 
+                <span>
+                    All our effort, for your Comfort!<br>
+                </span>
+                We have a great team to make your everyday life better!
+            </p>
+            <img src="pics/pic 2.jpg" class="fixToContent">
+        </div>
+    </div>
+    
+    <div id="second-page" class="animationOnScroll">
+        <h1 class="animationOnScroll">What We Do.</h1>
+        <div class="second-container">
+            <h2 class="animationOnScroll">Interior Renovation</h2>
+            <div class="interior-Renovation">
+               
+                <img src="pics/interior-renovation1.jpg" width="100%" height="auto" class="animationOnScroll">
+                <p class="animationOnScroll"><span style="font-size: 35px; font-weight: 700;">Transform Your Space with BK Renovation Co.<br></span>
+                    At BK Renovation Co., we specialize in interior renovations that breathe 
+                    new life into your spaces. Whether it's updating the layout, enhancing 
+                    lighting, reconfiguring furniture, or installing modern finishes like wallpapers 
+                    and partitions, our goal is to uplift your environment and elevate your lifestyle.</p>
+            </div>
+        </div>
+        <div class="third-container" >
+            <div class="thirdContainer-child" >
+                <img src="pics/flooring 1.jpg" alt="" class="animationOnScroll">
+                <h4 class="animationOnScroll">Flooring</h4>
+                <h5 class="animationOnScroll">Vinyl Flooring, Carpet Flooring, Hardwood Flooring, Laminate Flooring, Tile Flooring.</h5>
+                <a href="#" class="animationOnScroll">More</a>
+            </div>
+            <div class="thirdContainer-child">
+                <img src="pics/painting 1.jpg" alt="" class="animationOnScroll">
+                <h4 class="animationOnScroll">Painting</h4>
+                <h5 class="animationOnScroll">Taping, mudding, sanding and interior painting.</h5>
+                <a href="#" class="animationOnScroll">More</a>
+            </div>
+            <div class="thirdContainer-child">
+                <img src="pics/roofing 1.jpg" alt="" class="animationOnScroll">
+                <h4 class="animationOnScroll">Ceiling</h4>
+                <h5 class="animationOnScroll">Ceiling fixing, drywall ceiling installation, popcorn ceiling removal, ceiling texture etc,</h5>
+                <a href="#" class="animationOnScroll">More</a>
+            </div>
+            <div class="thirdContainer-child">
+                <img src="pics/wall 1.jpg" alt="" class="animationOnScroll">
+                <h4 class="animationOnScroll">Wall</h4>
+                <h5 class="animationOnScroll">Framing, drywall installation, taping and mudding, wall repair etc </h5>
+                <a href="#" class="animationOnScroll">More</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="other-services" class="animationOnScroll">
+        <div class="thirdContainer-child">
+            <img src="pics/heating.jpg" alt="" class="animationOnScroll">
+            <h4 class="animationOnScroll">Heating</h4>
+            <h5 class="animationOnScroll">Frunace installation and maintainance, Boiler repair and services, radiant floor heating etc</h5>
+            <a href="#" class="animationOnScroll">More</a>
+        </div>
+        <div class="thirdContainer-child">
+            <img src="pics/plumbing 2.jpg" alt="" class="animationOnScroll">
+            <h4 class="animationOnScroll">Plumbing</h4>
+            <h5 class="animationOnScroll">Pipe installation and repair, Fixture installation, Wire heater services, drain cleaning etc </h5>
+            <a href="#" class="animationOnScroll">More</a>
+        </div>
+        <div class="thirdContainer-child">
+            <img src="pics/electrician.jpg" alt="" class="animationOnScroll">
+            <h4 class="animationOnScroll">Electrical Installation and Maintainance</h4>
+            <h5 class="animationOnScroll">Wiring and rewiring, lights installation, Electrical panal upgrade, troubleshooting and repair etc</h5>
+            <a href="#" class="animationOnScroll">More</a>
+        </div>
+    </div>
+
+    <div id="services-container" class="animationOnScroll">
+        <div class="service-tags">
+            <h3 class="animationOnScroll">Looking for an Expert Swimming Pool Operator??</h3>
+            <h1 class="animationOnScroll">We are here for you...</h1>
+            <button class="animationOnScroll" onclick="openPopup()"><a href="#">Call Now</a></button>
+        </div>
+    </div>
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
