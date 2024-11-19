@@ -85,7 +85,7 @@ nav li a{
 ul li a svg{
     max-width: 40px;
     height: auto;
-    
+
 }
 
 ul li a img{
@@ -259,6 +259,7 @@ nav li:first-child{
 
     .first-content span {
         text-align: center; 
+        font-size: 22px;
     }
 }
 
@@ -497,5 +498,21 @@ nav li:first-child{
     text-decoration: none;
     font-family:fantasy;
     font-weight: 500;
+}
+
+@media (max-width: 700px){
+    #services-container .service-tags{
+        width: 300px;
+        height: 270px;
+    }
+
+    #services-container h1 {
+        font-size: 30px;
+    }
+    
+    #services-container h3 {
+        font-size: 20px;
+      
+    }
 }
 
