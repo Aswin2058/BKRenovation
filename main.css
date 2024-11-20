@@ -879,6 +879,13 @@ footer .footer-SocialMedia svg:hover{
     }
     footer ul{
         width: 100%;
+       
+    }
+
+    footer .footer-nav{
+        border-radius: 19px;
+        width: 100%;
+        box-shadow: 0 5px 4px rgb(161, 172, 172);
     }
 }
 
@@ -894,6 +901,7 @@ footer .footer-SocialMedia svg:hover{
 
 
 @media (max-width:700px){
+
     footer .ourTotalServices{
         font-size: smaller;
     }
