@@ -272,30 +272,38 @@ nav li:first-child{
         font-size: 22px;
     }
 }
-
-@keyframes appear{
-    from{
+@keyframes appear {
+    0% {
         opacity: 0;
-        clip-path: inset(100% 100% 0 0);
+        transform: translateY(30px); /* Slight slide-up effect */
     }
-    to{
+    100% {
         opacity: 1;
-        clip-path: inset(0 0 0 0);
+        transform: translateY(0);
     }
-    
 }
-.animationOnScroll{
-    animation:appear 5s linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 23%;
 
+/* Default Animation (Faster) */
+.animationOnScroll {
+    animation: appear 1s ease-out; /* Fast and smooth */
+    animation-timeline: view();
+    animation-range: entry 0% cover 15%; /* Trigger earlier */
+}
+
+/* Even Faster Animation for Smaller Screens */
+@media (max-width: 768px) {
+    .animationOnScroll {
+        animation: appear 0.8s ease-out; /* Very quick for small screens */
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%; /* Starts even earlier */
+    }
 }
 
 
 
 #second-page{
     max-width: 100%;
-    margin-top: 40px;
+    margin-top: 120px;
     align-items: center;
     text-align: center;
     padding: 20px;
@@ -340,6 +348,23 @@ nav li:first-child{
     }
     .interior-Renovation img{
         width: 300px;
+    }
+
+}
+
+@media(max-width: 600px){
+    #second-page{
+        margin-top: 140px;
+    }
+
+    .interior-Renovation p{
+        font-size: 9px;
+    }
+    .interior-Renovation img{
+        width: 300px;
+    }
+    .interior-Renovation{
+        gap: 0;
     }
 
 }
