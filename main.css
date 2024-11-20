@@ -532,6 +532,163 @@ nav li:first-child{
     }
 }
 
+
+/* About us container*/
+#aboutUs-Container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 19px;
+    background:linear-gradient(70deg, rgb(241, 147, 147), lightblue);
+    margin-top: 60px;
+    padding: 20px;  /* Add padding to give some spacing inside the container */
+}
+
+#aboutUs-Container h1 {
+    font-size: 40px;
+    margin: 0;  /* Remove default top and bottom margin */
+}
+
+#aboutUs-Container .about-company {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: -20px;
+    margin: 4px;  /* Adjusted the margin to create better spacing */
+    padding: 30px;
+}
+
+#aboutUs-Container .about-company img{
+    border-radius: 15px;
+    box-shadow: 10px 0 10px rgba(107, 185, 185, 0.342);
+}
+
+#aboutUs-Container .about-company h4{
+    padding: 30px;
+    background: blueviolet;
+    font-size: large;
+    margin-top: 30px;
+    width: 450px;
+    background: url(pics/Backgrounf.jpg);
+    border-radius: 16px;
+    box-sizing: border-box;
+    box-shadow: 10px 0 10x rgba(179, 214, 243, 0.5);
+}
+
+
+#aboutUs-Container .messageFrom-ceo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    
+}
+
+#aboutUs-Container .messageFrom-ceo img{
+    width: 250px;
+    height: 290px;
+    background: transparent;
+    padding: 30px;
+}
+
+#aboutUs-Container .messageFrom-ceo h4{
+    width: 750px;
+    font-size: larger;
+    padding: 30px;
+}
+
+
+#aboutUs-Container .messageFrom-team{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 30px;
+    
+}
+
+#aboutUs-Container .messageFrom-team img{
+    width: 650px;
+    height: 400px;
+    background: transparent;
+    border-radius: 19px;
+    padding: 30px;
+    
+}
+
+#aboutUs-Container .messageFrom-team h4{
+    width: 750px;
+    font-size: larger;
+    padding: 30px;
+}
+
+@media (max-width:1000px){
+    #aboutUs-Container .about-company{
+        flex-direction: column;
+    }
+    #aboutUs-Container .about-company h4{
+        margin-top: 0;
+    }
+
+}
+
+@media (max-width:800px){
+    #aboutUs-Container .about-company img{
+        width: 70%;
+        height: auto;
+    }
+
+    #aboutUs-Container .about-company h4{
+        font-size: smaller;   
+    }
+
+    #aboutUs-Container .messageFrom-ceo img{
+        width: 150px;
+        height: 190px;
+        margin-bottom: 0;
+    }
+
+    #aboutUs-Container .messageFrom-ceo h4{
+        font-size: smaller;
+        width: 80%;
+        margin-left: 12%;
+        margin-top: -40px;
+    }
+    
+    
+    #aboutUs-Container .messageFrom-team img{
+        width: 450px;
+        height: 280px;
+        background: transparent;
+        border-radius: 19px;
+        padding: 30px;
+    
+    }
+
+    #aboutUs-Container .messageFrom-team h4{
+        font-size: smaller;
+        width: 92%;
+        margin-left: 2%;
+        margin-top: -40px;
+    }
+
+}
+
+#aboutUs-Container .client-review{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+
 .review-form{
     border: 2px solid rgb(78, 49, 54);
     width: 350px;
@@ -711,100 +868,17 @@ nav li:first-child{
     display: none;
 }
 
+@media (max-width: 1000px){
+    .client-review{
+        display: flex;
+        flex-direction: column;
+    }
 
-/* About us container*/
-#aboutUs-Container {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border-radius: 19px;
-    background:linear-gradient(70deg, rgb(241, 147, 147), lightblue);
-    margin-top: 60px;
-    padding: 20px;  /* Add padding to give some spacing inside the container */
+    .review-window.maximized{
+        max-width: 80%;
+    }
 }
 
-#aboutUs-Container h1 {
-    font-size: 40px;
-    margin: 0;  /* Remove default top and bottom margin */
-}
-
-#aboutUs-Container .about-company {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: -20px;
-    margin: 4px;  /* Adjusted the margin to create better spacing */
-    padding: 30px;
-}
-
-#aboutUs-Container .about-company img{
-    border-radius: 15px;
-    box-shadow: 10px 0 10px rgba(107, 185, 185, 0.342);
-}
-
-
-#aboutUs-Container .about-company h4{
-    padding: 30px;
-    background: blueviolet;
-    font-size: large;
-    margin-top: 30px;
-    width: 450px;
-    background: url(pics/Backgrounf.jpg);
-    border-radius: 16px;
-    box-sizing: border-box;
-    box-shadow: 10px 0 10x rgba(179, 214, 243, 0.5);
-}
-
-#aboutUs-Container .messageFrom-ceo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 20px;
+@media(max-width){
     
-}
-
-#aboutUs-Container .messageFrom-ceo img{
-    width: 250px;
-    height: 290px;
-    background: transparent;
-}
-
-#aboutUs-Container .messageFrom-ceo h4{
-    width: 750px;
-    font-size: larger;
-}
-
-
-#aboutUs-Container .messageFrom-team{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 20px;
-    
-}
-
-#aboutUs-Container .messageFrom-team img{
-    width: 650px;
-    height: 400px;
-    background: transparent;
-    border-radius: 19px;
-}
-
-#aboutUs-Container .messageFrom-team h4{
-    width: 750px;
-    font-size: larger;
-}
-
-
-#aboutUs-Container .client-review{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
 }
