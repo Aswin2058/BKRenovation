@@ -342,8 +342,10 @@ nav li:first-child{
         flex-direction: column;
         align-items: center;
     }
+    
 
     .interior-Renovation p{
+        width: 100%;
         font-size: 18px;
     }
     .interior-Renovation img{
@@ -358,7 +360,7 @@ nav li:first-child{
     }
 
     .interior-Renovation p{
-        font-size: 9px;
+        font-size: 12px;
     }
     .interior-Renovation img{
         width: 300px;
