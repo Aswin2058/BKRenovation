@@ -1,0 +1,241 @@
+
+.review-form{
+    border: 2px solid rgb(78, 49, 54);
+    width: 350px;
+    height: auto;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 14px;
+}
+
+.review-form input{
+    padding: 5px;
+    background: transparent;
+    width: 80%;
+    font-weight: 500;
+    border: 3px groove grey;
+}
+
+.review-form textarea{
+    padding: 5px;
+    background: transparent;
+    width: 80%;
+    font-weight: 500;
+    border: 3px groove grey;
+}
+
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 5px;
+}
+
+.rating .star {
+    font-size: 30px;
+    color: #ddd;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+
+.rating .star.hover,
+.rating .star.active {
+    color: gold;
+}
+
+
+.review {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+#reviews-list p {
+    margin: 0 0 5px;
+}
+
+.review-checkbox-wrapper {
+    display: none;
+}
+
+.delete-selected-btn {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.select-reviews-btn {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Styling for the review window */
+.review-window {
+    width: 400px;  /* Set initial width */
+    height: 300px; /* Set initial height */
+    overflow-y: auto;  /* Enable vertical scrolling */
+    overflow-x: hidden; /* Optional: Prevent horizontal scrolling */
+    border: 1px solid #ccc; /* Optional: border for styling */
+    padding: 10px;
+    background-color: #fff;  /* Optional: background color */
+    position: sticky;
+    top: 50px;
+    left: 50px;
+    border-radius: 10px; /* Optional: rounded corners */
+    z-index: 100;  /* Ensure the window is on top */
+    box-sizing: border-box; /* Include padding/border in width/height */
+}
+
+/* When the window is maximized, make it take the full width and height of the viewport */
+.review-window.maximized {
+    width: 700px;   /* 100% of viewport width */
+    height: 80vh;  /* 100% of viewport height */
+    top: 0;
+    left: 0;
+    border-radius: 0;  /* Remove rounded corners when maximized */
+}
+
+/* Styling for the scrollbar (for webkit browsers) */
+.review-window::-webkit-scrollbar {
+    width: 8px;
+}
+
+.review-window::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+}
+
+.review-window::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+
+.window-header {
+    background-color: #4CAF50;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-submissionButton{
+    width: 70px;
+    height: auto;
+    font-size: large;
+    background: transparent;
+    margin-bottom: 10px;
+}
+
+.window-title {
+    font-weight: bold;
+}
+
+.maximize-btn{
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    right: 0;
+}
+
+.reviews-list {
+    padding: 20px;
+    overflow-y: auto;
+    height: calc(100% - 40px); /* Adjust the height to fit content */
+    max-height: 200px;
+}
+
+.reviews-list p {
+    margin: 0 0 10px;
+}
+
+
+/* .maximized {
+    width: 100%; 
+    height: 100%; 
+    top: 0;
+    left: 0;
+    border-radius: 0; 
+} */
+
+
+/* Minimized window */
+.minimized .reviews-list {
+    display: none;
+}
+
+@media (max-width: 1000px){
+    .client-review{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .review-window.maximized{
+        max-width: 80%;
+    }
+}
+
+@media(max-width){
+    
+}
+
+/*Popup for reviews*/
+/* Modal styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 200; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scrolling if needed */
+    background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+}
+
+/* Modal content box */
+.modal-content {
+    background-color: white;
+    margin: 10% auto; /* Center the modal */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%; /* Adjust the width */
+    border-radius: 10px;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.modal-content h2{
+    width: 100%;
+    background-color: #4CAF50;
+}
+
+/* Close button */
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover, .close-btn:focus {
+    color: black;
+    text-decoration: none;
+}
+
+.close-btn:hover, .close-btn:focus:hover{
+    color: rgb(63, 57, 57);
+}

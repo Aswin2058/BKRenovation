@@ -688,197 +688,180 @@ nav li:first-child{
     padding: 20px;
 }
 
+footer{
+    margin-top: 2px;
+    width: 100%;
+    height: 75vh;
+    background-color: aliceblue;
+    box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    text-align: center;
+}
 
-.review-form{
-    border: 2px solid rgb(78, 49, 54);
-    width: 350px;
-    height: auto;
-    font-size: large;
+footer .footer-container{
+    display: flex;
+    text-align: center;
+    align-items: top;
+    justify-content: space-around;
+}
+
+footer ul{
+    list-style: none;
+    margin-top: 40px;
+    left: 10px;
+}
+
+footer ul li{
+    padding: 10px;
+    margin: 5px;
+}
+
+footer ul li a{
+    text-decoration: none;
+    font-size: larger;
     font-weight: bold;
-    border-radius: 14px;
+    color: black;
+}
+footer ul li a:hover{
+    color: blueviolet;
 }
 
-.review-form input{
-    padding: 5px;
-    background: transparent;
-    width: 80%;
-    font-weight: 500;
-    border: 3px groove grey;
-}
-
-.review-form textarea{
-    padding: 5px;
-    background: transparent;
-    width: 80%;
-    font-weight: 500;
-    border: 3px groove grey;
-}
-
-
-.rating {
+footer .ourTotalServices{
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    gap: 5px;
-}
-
-.rating .star {
-    font-size: 30px;
-    color: #ddd;
-    cursor: pointer;
-    transition: color 0.2s ease-in-out;
-}
-
-.rating .star.active {
-    color: gold;
-}
-
-.rating .star.hover {
-    color: orange;
-}
-
-.review {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-}
-
-#reviews-list p {
-    margin: 0 0 5px;
-}
-
-.review-checkbox-wrapper {
-    display: none;
-}
-
-.delete-selected-btn {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: red;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-.select-reviews-btn {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: green;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-/* Styling for the review window */
-.review-window {
-    width: 400px;  /* Set initial width */
-    height: 300px; /* Set initial height */
-    overflow-y: auto;  /* Enable vertical scrolling */
-    overflow-x: hidden; /* Optional: Prevent horizontal scrolling */
-    border: 1px solid #ccc; /* Optional: border for styling */
-    padding: 10px;
-    background-color: #fff;  /* Optional: background color */
-    position: sticky;
-    top: 50px;
-    left: 50px;
-    border-radius: 10px; /* Optional: rounded corners */
-    z-index: 100;  /* Ensure the window is on top */
-    box-sizing: border-box; /* Include padding/border in width/height */
-}
-
-/* When the window is maximized, make it take the full width and height of the viewport */
-.review-window.maximized {
-    width: 700px;   /* 100% of viewport width */
-    height: 80vh;  /* 100% of viewport height */
-    top: 0;
-    left: 0;
-    border-radius: 0;  /* Remove rounded corners when maximized */
-}
-
-/* Styling for the scrollbar (for webkit browsers) */
-.review-window::-webkit-scrollbar {
-    width: 8px;
-}
-
-.review-window::-webkit-scrollbar-thumb {
-    background-color: #888;
-    border-radius: 4px;
-}
-
-.review-window::-webkit-scrollbar-thumb:hover {
-    background-color: #555;
-}
-
-
-.window-header {
-    background-color: #4CAF50;
-    padding: 10px;
-    color: white;
-    font-size: 18px;
-    display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    width: 900px;
+    height: 55vh;
+    border: 3px solid transparent;
+    border-radius: 9px;
+    box-shadow: -10px 10px 10px rgba(107, 185, 185, 0.342);
 }
 
-.form-submissionButton{
-    width: 70px;
-    height: auto;
+footer .ourTotalServices h3{
     font-size: large;
-    background: transparent;
-    margin-bottom: 10px;
+    color: rgb(17, 17, 104);
+
+}
+footer .ourTotalServices ul{
+    margin: 0;
+    padding: 0;
 }
 
-.window-title {
-    font-weight: bold;
-}
-
-.maximize-btn{
-    background: transparent;
-    border: none;
-    color: white;
-    font-size: 20px;
+footer .ourTotalServices li{
+    margin: 0;
+    padding: 0;
     cursor: pointer;
-    right: 0;
 }
 
-.reviews-list {
+footer .ourTotalServices li:hover{
+    color: rgb(4, 95, 27);
+}
+
+footer .ourTotalServices span{
+    color: rgb(84, 22, 143);
+    position: relative; /* Ensures the span has its own hover area */
+    z-index: 1;
+}
+footer .ourTotalServices span:hover{
+    color: rgb(4, 95, 27);
+}
+
+
+footer .ourTotalServices .interiorRenocatiron{
+    font-size: small;
+    list-style: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .ourTotalServices .otherServices{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: small;
+    font-weight: bold;
+    list-style: none;
+}
+
+
+
+footer .allRightReserce{
+    width: 100%;
+    height: auto;
     padding: 20px;
-    overflow-y: auto;
-    height: calc(100% - 40px); /* Adjust the height to fit content */
-    max-height: 200px;
+    background-color: white;
+    text-align: center;
 }
 
-.reviews-list p {
-    margin: 0 0 10px;
+footer .footer-SocialMedia{
+    margin-top: 80px;
+    max-width: 200px;
+    height:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    text-align: center;
+    margin-left: 43%;
+    border: 3px solid transparent;
+    border-radius: 13px;
+    box-shadow: 2px -6px 3px rgb(0, 2, 2);
+
+}
+
+footer .footer-SocialMedia svg{
+    width: 50px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+    border-radius: 6px;
+}
+
+footer .footer-SocialMedia svg:hover{
+    background-color: rgb(136, 187, 136);
+}
+
+@media (max-width:1000px){
+    footer{
+        height: auto;
+    }
+
+    footer .footer-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    footer ul{
+        width: 100%;
+    }
+}
+
+@media (max-width:800px){
+    footer .ourTotalServices{
+        height: auto;
+    }
+
+    footer .ourTotalServices .otherServices{
+        flex-direction: column;
+    }
 }
 
 
-/* .maximized {
-    width: 100%; 
-    height: 100%; 
-    top: 0;
-    left: 0;
-    border-radius: 0; 
-} */
+@media (max-width:700px){
+    footer .ourTotalServices{
+        font-size: smaller;
+    }
 
-
-/* Minimized window */
-.minimized .reviews-list {
-    display: none;
-}
-
-@media (max-width: 1000px){
-    .client-review{
-        display: flex;
+    footer .ourTotalServices .interiorRenocatiron{
         flex-direction: column;
     }
 
-    .review-window.maximized{
-        max-width: 80%;
+    footer .footer-SocialMedia{
+        margin-left: 25%;
     }
-}
 
-@media(max-width){
-    
 }
