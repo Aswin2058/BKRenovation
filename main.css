@@ -890,6 +890,10 @@ footer .footer-SocialMedia svg:hover{
 }
 
 @media (max-width:800px){
+    footer .ourTotalServices .interiorRenocatiron{
+        font-size: smaller;
+    }
+
     footer .ourTotalServices{
         height: auto;
     }
