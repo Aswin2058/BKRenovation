@@ -909,6 +909,13 @@ footer .footer-SocialMedia svg:hover{
     footer .ourTotalServices .interiorRenocatiron{
         flex-direction: column;
         font-size: smaller;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    footer .ourTotalServices .interiorRenocatiron ul{
+        width: 90%;
     }
 
     footer .footer-SocialMedia{
